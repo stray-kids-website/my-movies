@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #04070a;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: #4c2370;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    background-color: #702823;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    margin: 10px auto;
+    padding: 12px;
+    max-width: 300px;
+    border-radius: 8px;
+    
+.search-container {
+    text-align: center;
+    padding: 25px;
+}
+
+.search-container input {
+    width: 80%;
+    max-width: 450px;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+/* Movie collection section */
+.movie-section {
+    padding: 30px;
+}
+
+.movie-section h2 {
+    color: #e50914;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Movie cards layout */
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+/* Individual movie card */
+.movie-card {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(229, 9, 20, 0.4);
+}
+
+/* Movie poster */
+.movie-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Movie title */
+.movie-card h3 {
+    color: white;
+    margin: 12px 8px 5px;
+    font-size: 18px;
+}
+
+/* Release year and genre */
+.movie-card p {
+    color: #bbbbbb;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+/* Movie button */
+.movie-card button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.movie-card button:hover {
+    background-color: #b20710;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: #bbbbbb;
+}
+
+/* Responsive design for phones */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .movie-section {
+        padding: 15px;
+    }
+
+    .movie-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .movie-card img {
+        height: 220px;
+    }
+
+}
+    
